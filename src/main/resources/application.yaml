@@ -1,12 +1,17 @@
 spring:
   application:
     name: Cloud-Relational-Databases-in-Action
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/cloud_rdbms
+    url: jdbc:postgresql://localhost:12500/eca
     username: postgres
-    password: password
+    password: psql
+
+  data:
+    rest:
+      base-path: /api/v1
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-    open-in-view: false

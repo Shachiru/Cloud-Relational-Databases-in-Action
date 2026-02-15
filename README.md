@@ -26,11 +26,11 @@ Spring Data REST automatically exposes the following HATEOAS-compliant endpoints
 
 | Method   | Endpoint           | Description              |
 |----------|--------------------|--------------------------|
-| `GET`    | `/employees`       | Get a list of employees  |
-| `GET`    | `/employees/{id}`  | Get an employee by id    |
-| `POST`   | `/employees`       | Create a new employee    |
-| `PUT`    | `/employees/{id}`  | Update an employee       |
-| `DELETE` | `/employees/{id}`  | Delete an employee by id |
+| `GET`    | `/api/v1/employees`       | Get a list of employees  |
+| `GET`    | `/api/v1/employees/{id}`  | Get an employee by id    |
+| `POST`   | `/api/v1/employees`       | Create a new employee    |
+| `PUT`    | `/api/v1/employees/{id}`  | Update an employee       |
+| `DELETE` | `/api/v1/employees/{id}`  | Delete an employee by id |
 
 ### Sample Request Body
 
@@ -51,10 +51,10 @@ Spring Data REST automatically exposes the following HATEOAS-compliant endpoints
   "contact": "0771234567",
   "_links": {
     "self": {
-      "href": "http://localhost:8080/employees/1"
+      "href": "http://localhost:8080/api/v1/employees/1"
     },
     "employee": {
-      "href": "http://localhost:8080/employees/1"
+      "href": "http://localhost:8080/api/v1/employees/1"
     }
   }
 }
@@ -103,7 +103,7 @@ Spring Data REST automatically exposes the following HATEOAS-compliant endpoints
 
 5. **Access the API**
 
-   Open [http://localhost:8080/employees](http://localhost:8080/employees) in your browser or API client.
+   Open [http://localhost:8080/api/v1/employees](http://localhost:8080/api/v1/employees) in your browser or API client.
 
 ## License
 
