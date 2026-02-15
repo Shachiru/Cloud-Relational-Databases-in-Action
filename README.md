@@ -51,11 +51,23 @@ Spring Data REST automatically exposes the following HATEOAS-compliant endpoints
 ## Getting Started
 
 1. Clone the repository
-2. Build the project
+2. Set up and connect the database
+3. Build the project
    ```bash
    ./mvnw clean install
    ```
-3. Run the application
+4. Run the application
    ```bash
    ./mvnw spring-boot:run
    ```
+5. The application will start on the default port `8080` unless you have changed it. You can access the API endpoints using tools like Postman or cURL.
+
+## Testing
+
+A Postman collection is available for testing the API endpoints:
+
+[Cloud Relational Databases in Action - Postman Collection](https://www.postman.com/ijse-eca-5768309/workspace/eca-69-70/collection/47280517-ac4003bb-dfac-4239-afd3-9d97592bb639?action=share&creator=47280517)
+
+## Need Help?
+
+If you encounter any issues during the migration, feel free to reach out and start a discussion via the **Slack workspace**.
