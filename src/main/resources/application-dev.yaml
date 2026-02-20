@@ -1,0 +1,6 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:12500/eca
+    username: postgres
+    password: psql

@@ -2,10 +2,8 @@ spring:
   application:
     name: Cloud-Relational-Databases-in-Action
 
-  datasource:
-    url: jdbc:postgresql://localhost:12500/eca
-    username: postgres
-    password: psql
+  profiles:
+    active: gcp
 
   data:
     rest:
